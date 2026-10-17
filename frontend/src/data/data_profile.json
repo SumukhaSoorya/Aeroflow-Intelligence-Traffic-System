@@ -1,0 +1,834 @@
+{
+  "profiled_at": "2026-10-17T19:50:44.442941",
+  "datasets": {
+    "Air-Clean.csv": {
+      "dataset_name": "Indian Domestic Airline Dataset (Cleaned Schedules)",
+      "filename": "Air-Clean.csv",
+      "file_size_bytes": 4486201,
+      "file_size_mb": 4.28,
+      "total_rows": 33734,
+      "total_columns": 11,
+      "columns": [
+        "airline",
+        "flightNumber",
+        "origin",
+        "destination",
+        "daysOfWeek",
+        "scheduledDepartureTime",
+        "scheduledArrivalTime",
+        "timezone",
+        "validFrom",
+        "validTo",
+        "lastUpdated"
+      ],
+      "data_types": {
+        "airline": "str",
+        "flightNumber": "str",
+        "origin": "str",
+        "destination": "str",
+        "daysOfWeek": "str",
+        "scheduledDepartureTime": "str",
+        "scheduledArrivalTime": "str",
+        "timezone": "str",
+        "validFrom": "str",
+        "validTo": "str",
+        "lastUpdated": "str"
+      },
+      "missing_values": {
+        "airline": 0,
+        "flightNumber": 0,
+        "origin": 0,
+        "destination": 0,
+        "daysOfWeek": 0,
+        "scheduledDepartureTime": 0,
+        "scheduledArrivalTime": 0,
+        "timezone": 0,
+        "validFrom": 0,
+        "validTo": 0,
+        "lastUpdated": 0
+      },
+      "duplicate_rows": 118,
+      "numeric_stats": {},
+      "categorical_stats": {
+        "airline": {
+          "unique_count": 14,
+          "top_sample": [
+            "IndiGo",
+            "SpiceJet",
+            "Air India",
+            "GoAir",
+            "Air India Express"
+          ]
+        },
+        "flightNumber": {
+          "unique_count": 5975,
+          "top_sample": [
+            "215",
+            "6041",
+            "874",
+            "6962",
+            "214"
+          ]
+        },
+        "origin": {
+          "unique_count": 101,
+          "top_sample": [
+            "Mumbai",
+            "Delhi",
+            "Bengaluru",
+            "Hyderabad",
+            "Kolkata"
+          ]
+        },
+        "destination": {
+          "unique_count": 108,
+          "top_sample": [
+            "Delhi",
+            "Mumbai",
+            "Bengaluru",
+            "Hyderabad",
+            "Kolkata"
+          ]
+        },
+        "daysOfWeek": {
+          "unique_count": 125,
+          "top_sample": [
+            "Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday",
+            "Saturday",
+            "Sunday,Tuesday,Wednesday,Thursday,Friday,Saturday",
+            "Sunday,Monday,Tuesday,Wednesday,Thursday,Friday",
+            "Friday"
+          ]
+        },
+        "scheduledDepartureTime": {
+          "unique_count": 288,
+          "top_sample": [
+            "14:45",
+            "13:00",
+            "13:25",
+            "14:55",
+            "17:00"
+          ]
+        },
+        "scheduledArrivalTime": {
+          "unique_count": 288,
+          "top_sample": [
+            "16:40",
+            "14:45",
+            "15:40",
+            "18:40",
+            "13:30"
+          ]
+        },
+        "timezone": {
+          "unique_count": 988,
+          "top_sample": [
+            "2020-10-24",
+            "2020-03-28",
+            "2019-03-30",
+            "2024-03-30",
+            "2022-10-29"
+          ]
+        },
+        "validFrom": {
+          "unique_count": 976,
+          "top_sample": [
+            "2020-03-29",
+            "2019-10-27",
+            "2018-10-28",
+            "2023-10-29",
+            "2022-03-27"
+          ]
+        },
+        "validTo": {
+          "unique_count": 988,
+          "top_sample": [
+            "2020-10-24",
+            "2020-03-28",
+            "2019-03-30",
+            "2024-03-30",
+            "2022-10-29"
+          ]
+        },
+        "lastUpdated": {
+          "unique_count": 1,
+          "top_sample": [
+            "2025-07-16"
+          ]
+        }
+      },
+      "subset_note": "Full dataset"
+    },
+    "Air_full-Raw.csv": {
+      "dataset_name": "Indian Domestic Airline Dataset (Raw Schedules)",
+      "filename": "Air_full-Raw.csv",
+      "file_size_bytes": 13723064,
+      "file_size_mb": 13.09,
+      "total_rows": 113339,
+      "total_columns": 11,
+      "columns": [
+        "airline",
+        "flightNumber",
+        "origin",
+        "destination",
+        "daysOfWeek",
+        "scheduledDepartureTime",
+        "scheduledArrivalTime",
+        "timezone",
+        "validFrom",
+        "validTo",
+        "lastUpdated"
+      ],
+      "data_types": {
+        "airline": "str",
+        "flightNumber": "str",
+        "origin": "str",
+        "destination": "str",
+        "daysOfWeek": "str",
+        "scheduledDepartureTime": "str",
+        "scheduledArrivalTime": "str",
+        "timezone": "str",
+        "validFrom": "str",
+        "validTo": "str",
+        "lastUpdated": "str"
+      },
+      "missing_values": {
+        "airline": 3730,
+        "flightNumber": 381,
+        "origin": 0,
+        "destination": 2160,
+        "daysOfWeek": 0,
+        "scheduledDepartureTime": 39011,
+        "scheduledArrivalTime": 38440,
+        "timezone": 0,
+        "validFrom": 0,
+        "validTo": 0,
+        "lastUpdated": 0
+      },
+      "duplicate_rows": 3404,
+      "numeric_stats": {},
+      "categorical_stats": {
+        "airline": {
+          "unique_count": 14,
+          "top_sample": [
+            "IndiGo",
+            "SpiceJet",
+            "Air India",
+            "GoAir",
+            "Air India Express"
+          ]
+        },
+        "flightNumber": {
+          "unique_count": 9177,
+          "top_sample": [
+            "2609",
+            "6041",
+            "215",
+            "611",
+            "287"
+          ]
+        },
+        "origin": {
+          "unique_count": 103,
+          "top_sample": [
+            "Delhi",
+            "Mumbai",
+            "Bengaluru",
+            "Hyderabad",
+            "Kolkata"
+          ]
+        },
+        "destination": {
+          "unique_count": 114,
+          "top_sample": [
+            "Delhi",
+            "Bengaluru",
+            "Mumbai",
+            "Hyderabad",
+            "Kolkata"
+          ]
+        },
+        "daysOfWeek": {
+          "unique_count": 127,
+          "top_sample": [
+            "Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday",
+            "Saturday",
+            "Friday",
+            "Monday",
+            "Sunday,Monday,Tuesday,Wednesday,Thursday,Friday"
+          ]
+        },
+        "scheduledDepartureTime": {
+          "unique_count": 288,
+          "top_sample": [
+            "13:00",
+            "05:45",
+            "12:00",
+            "15:00",
+            "06:05"
+          ]
+        },
+        "scheduledArrivalTime": {
+          "unique_count": 289,
+          "top_sample": [
+            "16:40",
+            "14:00",
+            "14:55",
+            "12:40",
+            "14:20"
+          ]
+        },
+        "timezone": {
+          "unique_count": 1934,
+          "top_sample": [
+            "2025-10-25",
+            "2021-10-30",
+            "2020-10-24",
+            "2025-03-29",
+            "2022-10-29"
+          ]
+        },
+        "validFrom": {
+          "unique_count": 1928,
+          "top_sample": [
+            "2025-03-30",
+            "2020-03-29",
+            "2022-03-27",
+            "2024-10-27",
+            "2019-10-27"
+          ]
+        },
+        "validTo": {
+          "unique_count": 1934,
+          "top_sample": [
+            "2025-10-25",
+            "2021-10-30",
+            "2020-10-24",
+            "2025-03-29",
+            "2022-10-29"
+          ]
+        },
+        "lastUpdated": {
+          "unique_count": 1,
+          "top_sample": [
+            "2025-07-16"
+          ]
+        }
+      },
+      "subset_note": "Full dataset"
+    },
+    "Data_Train.csv": {
+      "dataset_name": "Indian Flight Price Dataset (Train Fares)",
+      "filename": "Data_Train.csv",
+      "file_size_bytes": 534554,
+      "file_size_mb": 0.51,
+      "total_rows": 10683,
+      "total_columns": 7,
+      "columns": [
+        "Airline",
+        "Date_of_Journey",
+        "Source",
+        "Dep_Time",
+        "Destination",
+        "Class",
+        "Price"
+      ],
+      "data_types": {
+        "Airline": "str",
+        "Date_of_Journey": "str",
+        "Source": "str",
+        "Dep_Time": "str",
+        "Destination": "str",
+        "Class": "int64",
+        "Price": "int64"
+      },
+      "missing_values": {
+        "Airline": 0,
+        "Date_of_Journey": 0,
+        "Source": 0,
+        "Dep_Time": 0,
+        "Destination": 0,
+        "Class": 0,
+        "Price": 0
+      },
+      "duplicate_rows": 2001,
+      "numeric_stats": {
+        "Class": {
+          "count": 10683,
+          "min": 0.0,
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "std": 0.0
+        },
+        "Price": {
+          "count": 10683,
+          "min": 1759.0,
+          "max": 79512.0,
+          "mean": 9087.06,
+          "median": 8372.0,
+          "std": 4611.36
+        }
+      },
+      "categorical_stats": {
+        "Airline": {
+          "unique_count": 12,
+          "top_sample": [
+            "Jet Airways",
+            "IndiGo",
+            "Air India",
+            "Multiple carriers",
+            "SpiceJet"
+          ]
+        },
+        "Date_of_Journey": {
+          "unique_count": 44,
+          "top_sample": [
+            "18/05/2019",
+            "6/06/2019",
+            "21/05/2019",
+            "9/06/2019",
+            "12/06/2019"
+          ]
+        },
+        "Source": {
+          "unique_count": 5,
+          "top_sample": [
+            "Delhi",
+            "Kolkata",
+            "Banglore",
+            "Mumbai",
+            "Chennai"
+          ]
+        },
+        "Dep_Time": {
+          "unique_count": 222,
+          "top_sample": [
+            "18:55",
+            "17:00",
+            "07:05",
+            "10:00",
+            "07:10"
+          ]
+        },
+        "Destination": {
+          "unique_count": 6,
+          "top_sample": [
+            "Cochin",
+            "Banglore",
+            "Delhi",
+            "New Delhi",
+            "Hyderabad"
+          ]
+        }
+      },
+      "subset_note": "Full dataset"
+    },
+    "processed_data.csv": {
+      "dataset_name": "Indian Flight Price Dataset (Pre-encoded Fares)",
+      "filename": "processed_data.csv",
+      "file_size_bytes": 566547,
+      "file_size_mb": 0.54,
+      "total_rows": 10683,
+      "total_columns": 12,
+      "columns": [
+        "Airline",
+        "Airline_encoded",
+        "Source",
+        "Source_encoded",
+        "Destination",
+        "Destination_encoded",
+        "Date",
+        "Month",
+        "Year",
+        "Hour",
+        "Minute",
+        "Price"
+      ],
+      "data_types": {
+        "Airline": "str",
+        "Airline_encoded": "int64",
+        "Source": "str",
+        "Source_encoded": "int64",
+        "Destination": "str",
+        "Destination_encoded": "int64",
+        "Date": "int64",
+        "Month": "int64",
+        "Year": "int64",
+        "Hour": "int64",
+        "Minute": "int64",
+        "Price": "int64"
+      },
+      "missing_values": {
+        "Airline": 0,
+        "Airline_encoded": 0,
+        "Source": 0,
+        "Source_encoded": 0,
+        "Destination": 0,
+        "Destination_encoded": 0,
+        "Date": 0,
+        "Month": 0,
+        "Year": 0,
+        "Hour": 0,
+        "Minute": 0,
+        "Price": 0
+      },
+      "duplicate_rows": 2001,
+      "numeric_stats": {
+        "Airline_encoded": {
+          "count": 10683,
+          "min": 0.0,
+          "max": 11.0,
+          "mean": 3.97,
+          "median": 4.0,
+          "std": 2.35
+        },
+        "Source_encoded": {
+          "count": 10683,
+          "min": 0.0,
+          "max": 4.0,
+          "mean": 1.95,
+          "median": 2.0,
+          "std": 1.18
+        },
+        "Destination_encoded": {
+          "count": 10683,
+          "min": 0.0,
+          "max": 4.0,
+          "mean": 1.17,
+          "median": 1.0,
+          "std": 1.01
+        },
+        "Date": {
+          "count": 10683,
+          "min": 1.0,
+          "max": 27.0,
+          "mean": 13.51,
+          "median": 12.0,
+          "std": 8.48
+        },
+        "Month": {
+          "count": 10683,
+          "min": 3.0,
+          "max": 6.0,
+          "mean": 4.71,
+          "median": 5.0,
+          "std": 1.16
+        },
+        "Year": {
+          "count": 10683,
+          "min": 2019.0,
+          "max": 2019.0,
+          "mean": 2019.0,
+          "median": 2019.0,
+          "std": 0.0
+        },
+        "Hour": {
+          "count": 10683,
+          "min": 0.0,
+          "max": 23.0,
+          "mean": 12.49,
+          "median": 11.0,
+          "std": 5.75
+        },
+        "Minute": {
+          "count": 10683,
+          "min": 0.0,
+          "max": 55.0,
+          "mean": 24.41,
+          "median": 25.0,
+          "std": 18.77
+        },
+        "Price": {
+          "count": 10683,
+          "min": 1759.0,
+          "max": 79512.0,
+          "mean": 9087.06,
+          "median": 8372.0,
+          "std": 4611.36
+        }
+      },
+      "categorical_stats": {
+        "Airline": {
+          "unique_count": 12,
+          "top_sample": [
+            "Jet Airways",
+            "IndiGo",
+            "Air India",
+            "Multiple carriers",
+            "SpiceJet"
+          ]
+        },
+        "Source": {
+          "unique_count": 5,
+          "top_sample": [
+            "Delhi",
+            "Kolkata",
+            "Banglore",
+            "Mumbai",
+            "Chennai"
+          ]
+        },
+        "Destination": {
+          "unique_count": 5,
+          "top_sample": [
+            "Cochin",
+            "Banglore",
+            "Delhi",
+            "Hyderabad",
+            "Kolkata"
+          ]
+        }
+      },
+      "subset_note": "Full dataset"
+    },
+    "airports.csv": {
+      "dataset_name": "OurAirports Coordinates Dataset (India Subset)",
+      "filename": "airports.csv",
+      "file_size_bytes": 12724447,
+      "file_size_mb": 12.13,
+      "total_rows": 651,
+      "total_columns": 19,
+      "columns": [
+        "id",
+        "ident",
+        "type",
+        "name",
+        "latitude_deg",
+        "longitude_deg",
+        "elevation_ft",
+        "continent",
+        "iso_country",
+        "iso_region",
+        "municipality",
+        "scheduled_service",
+        "icao_code",
+        "iata_code",
+        "gps_code",
+        "local_code",
+        "home_link",
+        "wikipedia_link",
+        "keywords"
+      ],
+      "data_types": {
+        "id": "int64",
+        "ident": "str",
+        "type": "str",
+        "name": "str",
+        "latitude_deg": "float64",
+        "longitude_deg": "float64",
+        "elevation_ft": "float64",
+        "continent": "str",
+        "iso_country": "str",
+        "iso_region": "str",
+        "municipality": "str",
+        "scheduled_service": "str",
+        "icao_code": "str",
+        "iata_code": "str",
+        "gps_code": "str",
+        "local_code": "str",
+        "home_link": "str",
+        "wikipedia_link": "str",
+        "keywords": "str"
+      },
+      "missing_values": {
+        "id": 0,
+        "ident": 0,
+        "type": 0,
+        "name": 0,
+        "latitude_deg": 0,
+        "longitude_deg": 0,
+        "elevation_ft": 245,
+        "continent": 0,
+        "iso_country": 0,
+        "iso_region": 0,
+        "municipality": 67,
+        "scheduled_service": 0,
+        "icao_code": 470,
+        "iata_code": 487,
+        "gps_code": 387,
+        "local_code": 592,
+        "home_link": 592,
+        "wikipedia_link": 411,
+        "keywords": 500
+      },
+      "duplicate_rows": 0,
+      "numeric_stats": {
+        "id": {
+          "count": 651,
+          "min": 3283.0,
+          "max": 610317.0,
+          "mean": 217896.12,
+          "median": 313997.0,
+          "std": 183327.58
+        },
+        "latitude_deg": {
+          "count": 651,
+          "min": 7.01304,
+          "max": 35.396467,
+          "mean": 21.82,
+          "median": 22.81,
+          "std": 6.79
+        },
+        "longitude_deg": {
+          "count": 651,
+          "min": 68.891296,
+          "max": 97.019660949707,
+          "mean": 80.82,
+          "median": 78.59,
+          "std": 6.93
+        },
+        "elevation_ft": {
+          "count": 406,
+          "min": 1.0,
+          "max": 16200.0,
+          "mean": 1906.26,
+          "median": 745.5,
+          "std": 3166.97
+        }
+      },
+      "categorical_stats": {
+        "ident": {
+          "unique_count": 651,
+          "top_sample": [
+            "HU-0072",
+            "IN-0001",
+            "IN-0002",
+            "IN-0003",
+            "IN-0004"
+          ]
+        },
+        "type": {
+          "unique_count": 6,
+          "top_sample": [
+            "heliport",
+            "small_airport",
+            "medium_airport",
+            "large_airport",
+            "closed"
+          ]
+        },
+        "name": {
+          "unique_count": 650,
+          "top_sample": [
+            "HAL Heliport",
+            "Helipad",
+            "Siachen Base Camp Heliport",
+            "Tawang Air Force Station",
+            "Daulat Beg Oldi Advanced Landing Ground"
+          ]
+        },
+        "continent": {
+          "unique_count": 1,
+          "top_sample": [
+            "AS"
+          ]
+        },
+        "iso_country": {
+          "unique_count": 1,
+          "top_sample": [
+            "IN"
+          ]
+        },
+        "iso_region": {
+          "unique_count": 36,
+          "top_sample": [
+            "IN-MM",
+            "IN-UP",
+            "IN-OR",
+            "IN-AP",
+            "IN-KA"
+          ]
+        },
+        "municipality": {
+          "unique_count": 483,
+          "top_sample": [
+            "Mumbai",
+            "Shimla",
+            "Nancowry",
+            "Bengaluru",
+            "Hyderabad"
+          ]
+        },
+        "scheduled_service": {
+          "unique_count": 2,
+          "top_sample": [
+            "no",
+            "yes"
+          ]
+        },
+        "icao_code": {
+          "unique_count": 181,
+          "top_sample": [
+            "VOJK",
+            "VEPY",
+            "VEAY",
+            "VAAV",
+            "VAAM"
+          ]
+        },
+        "iata_code": {
+          "unique_count": 164,
+          "top_sample": [
+            "PYG",
+            "AYJ",
+            "AVR",
+            "SDW",
+            "NMI"
+          ]
+        },
+        "gps_code": {
+          "unique_count": 264,
+          "top_sample": [
+            "VOJK",
+            "VEPY",
+            "VEAY",
+            "VAAV",
+            "VODX"
+          ]
+        },
+        "local_code": {
+          "unique_count": 59,
+          "top_sample": [
+            "BMT",
+            "VA53",
+            "VA74",
+            "JLG",
+            "VA78"
+          ]
+        },
+        "home_link": {
+          "unique_count": 59,
+          "top_sample": [
+            "https://web.archive.org/web/20170713034841/http://www.aai.aero/allAirports/nadirgul.jsp",
+            "https://web.archive.org/web/20240204161112/https://ksiidc.karnataka.gov.in/new-page/ShivamoggaAirport/en",
+            "https://niairport.in/",
+            "https://www.aai.aero/en/node/71997",
+            "http://aai.aero/allAirports/diu_airpo_gi.jsp"
+          ]
+        },
+        "wikipedia_link": {
+          "unique_count": 239,
+          "top_sample": [
+            "https://en.wikipedia.org/wiki/Dinjan_Airfield",
+            "https://en.wikipedia.org/wiki/Daulat_Beg_Oldi_Advanced_Landing_Ground",
+            "https://en.wikipedia.org/wiki/Walong",
+            "https://en.wikipedia.org/wiki/Jakkur_Aerodrome",
+            "https://en.wikipedia.org/wiki/Pakyong_Airport"
+          ]
+        },
+        "keywords": {
+          "unique_count": 150,
+          "top_sample": [
+            "Bombay",
+            "Maliku",
+            "NDGL, Nadergul",
+            "XAM",
+            "Maharishi Valmiki International"
+          ]
+        }
+      },
+      "subset_note": "Filtered to IN (651 of 86089 global records)"
+    }
+  }
+}

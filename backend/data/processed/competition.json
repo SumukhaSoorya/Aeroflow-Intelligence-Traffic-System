@@ -1,0 +1,281 @@
+{
+  "total_routes": 1423,
+  "tiers": [
+    {
+      "tier": "Monopoly (1 Airline)",
+      "count": 627,
+      "percentage": 44.1
+    },
+    {
+      "tier": "Moderate Competition (2-3 Airlines)",
+      "count": 510,
+      "percentage": 35.8
+    },
+    {
+      "tier": "High Competition (4+ Airlines)",
+      "count": 286,
+      "percentage": 20.1
+    }
+  ],
+  "top_competitive_routes": [
+    {
+      "route": "Bengaluru \u2192 Hyderabad",
+      "airline_count": 11,
+      "frequency": 185,
+      "airlines": [
+        "Air India",
+        "Air India Express",
+        "Akasa Air",
+        "Alliance Air (India)",
+        "GoAir",
+        "IndiGo",
+        "Jet Airways",
+        "SpiceJet",
+        "Star Air",
+        "TruJet",
+        "Vistara"
+      ],
+      "fare_info": null
+    },
+    {
+      "route": "Hyderabad \u2192 Bengaluru",
+      "airline_count": 10,
+      "frequency": 212,
+      "airlines": [
+        "Air India",
+        "Air India Express",
+        "Akasa Air",
+        "Alliance Air (India)",
+        "GoAir",
+        "IndiGo",
+        "Jet Airways",
+        "SpiceJet",
+        "Star Air",
+        "Vistara"
+      ],
+      "fare_info": null
+    },
+    {
+      "route": "Mumbai \u2192 Delhi",
+      "airline_count": 9,
+      "frequency": 354,
+      "airlines": [
+        "Air India",
+        "Air India Express",
+        "Akasa Air",
+        "GoAir",
+        "IndiGo",
+        "Jet Airways",
+        "Jetlite",
+        "SpiceJet",
+        "Vistara"
+      ],
+      "fare_info": null
+    },
+    {
+      "route": "Delhi \u2192 Mumbai",
+      "airline_count": 9,
+      "frequency": 285,
+      "airlines": [
+        "Air India",
+        "Air India Express",
+        "Akasa Air",
+        "GoAir",
+        "IndiGo",
+        "Jet Airways",
+        "Jetlite",
+        "SpiceJet",
+        "Vistara"
+      ],
+      "fare_info": null
+    },
+    {
+      "route": "Bengaluru \u2192 Delhi",
+      "airline_count": 9,
+      "frequency": 283,
+      "airlines": [
+        "Air India",
+        "Air India Express",
+        "Akasa Air",
+        "GoAir",
+        "IndiGo",
+        "Jet Airways",
+        "Jetlite",
+        "SpiceJet",
+        "Vistara"
+      ],
+      "fare_info": null
+    },
+    {
+      "route": "Mumbai \u2192 Bengaluru",
+      "airline_count": 9,
+      "frequency": 248,
+      "airlines": [
+        "Air India",
+        "Air India Express",
+        "Akasa Air",
+        "GoAir",
+        "IndiGo",
+        "Jet Airways",
+        "Jetlite",
+        "SpiceJet",
+        "Vistara"
+      ],
+      "fare_info": null
+    },
+    {
+      "route": "Ahmedabad \u2192 Delhi",
+      "airline_count": 9,
+      "frequency": 205,
+      "airlines": [
+        "Air India",
+        "Air India Express",
+        "Akasa Air",
+        "Alliance Air (India)",
+        "GoAir",
+        "IndiGo",
+        "Jet Airways",
+        "SpiceJet",
+        "Vistara"
+      ],
+      "fare_info": null
+    },
+    {
+      "route": "Pune \u2192 Delhi",
+      "airline_count": 9,
+      "frequency": 201,
+      "airlines": [
+        "Air India",
+        "Air India Express",
+        "Akasa Air",
+        "GoAir",
+        "IndiGo",
+        "Jet Airways",
+        "Jetlite",
+        "SpiceJet",
+        "Vistara"
+      ],
+      "fare_info": null
+    },
+    {
+      "route": "Hyderabad \u2192 Delhi",
+      "airline_count": 9,
+      "frequency": 192,
+      "airlines": [
+        "Air India",
+        "Air India Express",
+        "Akasa Air",
+        "GoAir",
+        "IndiGo",
+        "Jet Airways",
+        "Jetlite",
+        "SpiceJet",
+        "Vistara"
+      ],
+      "fare_info": null
+    },
+    {
+      "route": "Mumbai \u2192 Chennai",
+      "airline_count": 9,
+      "frequency": 176,
+      "airlines": [
+        "Air India",
+        "Air India Express",
+        "Akasa Air",
+        "GoAir",
+        "IndiGo",
+        "Jet Airways",
+        "Jetlite",
+        "SpiceJet",
+        "Vistara"
+      ],
+      "fare_info": null
+    },
+    {
+      "route": "Chennai \u2192 Mumbai",
+      "airline_count": 9,
+      "frequency": 174,
+      "airlines": [
+        "Air India",
+        "Air India Express",
+        "Akasa Air",
+        "GoAir",
+        "IndiGo",
+        "Jet Airways",
+        "Jetlite",
+        "SpiceJet",
+        "Vistara"
+      ],
+      "fare_info": null
+    },
+    {
+      "route": "Guwahati \u2192 Kolkata",
+      "airline_count": 9,
+      "frequency": 170,
+      "airlines": [
+        "Air India",
+        "Air India Express",
+        "Alliance Air (India)",
+        "FlyBig",
+        "GoAir",
+        "IndiGo",
+        "Jet Airways",
+        "SpiceJet",
+        "Vistara"
+      ],
+      "fare_info": null
+    },
+    {
+      "route": "Delhi \u2192 Bengaluru",
+      "airline_count": 9,
+      "frequency": 168,
+      "airlines": [
+        "Air India",
+        "Air India Express",
+        "Akasa Air",
+        "GoAir",
+        "IndiGo",
+        "Jet Airways",
+        "Jetlite",
+        "SpiceJet",
+        "Vistara"
+      ],
+      "fare_info": null
+    },
+    {
+      "route": "Kolkata \u2192 Guwahati",
+      "airline_count": 9,
+      "frequency": 167,
+      "airlines": [
+        "Air India",
+        "Air India Express",
+        "Akasa Air",
+        "Alliance Air (India)",
+        "GoAir",
+        "IndiGo",
+        "Jet Airways",
+        "SpiceJet",
+        "Vistara"
+      ],
+      "fare_info": null
+    },
+    {
+      "route": "Lucknow \u2192 Delhi",
+      "airline_count": 9,
+      "frequency": 167,
+      "airlines": [
+        "Air India",
+        "Air India Express",
+        "Alliance Air (India)",
+        "GoAir",
+        "IndiGo",
+        "Jet Airways",
+        "Jetlite",
+        "SpiceJet",
+        "Vistara"
+      ],
+      "fare_info": null
+    }
+  ],
+  "average_airlines_per_route": 2.36
+}

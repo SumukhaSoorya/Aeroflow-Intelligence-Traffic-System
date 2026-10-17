@@ -1,0 +1,529 @@
+[
+  {
+    "name": "IndiGo",
+    "total_flights": 19066,
+    "flight_share_pct": 56.52,
+    "routes_operated": 1051,
+    "airports_served_count": 84,
+    "color_hex": "#0052CC",
+    "color_rgb": [
+      0,
+      82,
+      204
+    ],
+    "fare_stats": {
+      "min_fare": 2227.0,
+      "avg_fare": 5673.68,
+      "max_fare": 22153.0,
+      "fare_count": 2053
+    },
+    "top_routes": [
+      {
+        "route": "Srinagar \u2192 Delhi",
+        "flights": 255
+      },
+      {
+        "route": "Jammu \u2192 Srinagar",
+        "flights": 227
+      },
+      {
+        "route": "Jammu \u2192 Delhi",
+        "flights": 224
+      },
+      {
+        "route": "Srinagar \u2192 Jammu",
+        "flights": 182
+      },
+      {
+        "route": "Kolkata \u2192 Chandigarh",
+        "flights": 173
+      }
+    ]
+  },
+  {
+    "name": "SpiceJet",
+    "total_flights": 3373,
+    "flight_share_pct": 10.0,
+    "routes_operated": 570,
+    "airports_served_count": 70,
+    "color_hex": "#EA580C",
+    "color_rgb": [
+      234,
+      88,
+      12
+    ],
+    "fare_stats": {
+      "min_fare": 1759.0,
+      "avg_fare": 4338.28,
+      "max_fare": 23267.0,
+      "fare_count": 818
+    },
+    "top_routes": [
+      {
+        "route": "Tirupati \u2192 Hyderabad",
+        "flights": 43
+      },
+      {
+        "route": "Mangalore \u2192 Bengaluru",
+        "flights": 43
+      },
+      {
+        "route": "Chennai \u2192 Kolkata",
+        "flights": 38
+      },
+      {
+        "route": "Bengaluru \u2192 Mangalore",
+        "flights": 37
+      },
+      {
+        "route": "Hyderabad \u2192 Tirupati",
+        "flights": 36
+      }
+    ]
+  },
+  {
+    "name": "Air India",
+    "total_flights": 3117,
+    "flight_share_pct": 9.24,
+    "routes_operated": 309,
+    "airports_served_count": 60,
+    "color_hex": "#DC2626",
+    "color_rgb": [
+      220,
+      38,
+      38
+    ],
+    "fare_stats": {
+      "min_fare": 2050.0,
+      "avg_fare": 9611.21,
+      "max_fare": 31945.0,
+      "fare_count": 1752
+    },
+    "top_routes": [
+      {
+        "route": "Mumbai \u2192 Delhi",
+        "flights": 74
+      },
+      {
+        "route": "Bengaluru \u2192 Delhi",
+        "flights": 67
+      },
+      {
+        "route": "Delhi \u2192 Mumbai",
+        "flights": 66
+      },
+      {
+        "route": "Hyderabad \u2192 Delhi",
+        "flights": 51
+      },
+      {
+        "route": "Delhi \u2192 Bengaluru",
+        "flights": 48
+      }
+    ]
+  },
+  {
+    "name": "GoAir",
+    "total_flights": 1854,
+    "flight_share_pct": 5.5,
+    "routes_operated": 278,
+    "airports_served_count": 38,
+    "color_hex": "#16A34A",
+    "color_rgb": [
+      22,
+      163,
+      74
+    ],
+    "fare_stats": {
+      "min_fare": 3398.0,
+      "avg_fare": 5861.06,
+      "max_fare": 22794.0,
+      "fare_count": 194
+    },
+    "top_routes": [
+      {
+        "route": "Srinagar \u2192 Mumbai",
+        "flights": 54
+      },
+      {
+        "route": "Srinagar \u2192 Delhi",
+        "flights": 49
+      },
+      {
+        "route": "Jammu \u2192 Srinagar",
+        "flights": 46
+      },
+      {
+        "route": "Goa \u2192 Mumbai",
+        "flights": 35
+      },
+      {
+        "route": "Srinagar \u2192 Jammu",
+        "flights": 31
+      }
+    ]
+  },
+  {
+    "name": "Air India Express",
+    "total_flights": 1803,
+    "flight_share_pct": 5.34,
+    "routes_operated": 195,
+    "airports_served_count": 29,
+    "color_hex": "#F43F5E",
+    "color_rgb": [
+      244,
+      63,
+      94
+    ],
+    "fare_stats": null,
+    "top_routes": [
+      {
+        "route": "Bengaluru \u2192 Kochi",
+        "flights": 63
+      },
+      {
+        "route": "Srinagar \u2192 Delhi",
+        "flights": 61
+      },
+      {
+        "route": "Kochi \u2192 Bengaluru",
+        "flights": 55
+      },
+      {
+        "route": "Hyderabad \u2192 Bengaluru",
+        "flights": 46
+      },
+      {
+        "route": "Bengaluru \u2192 Hyderabad",
+        "flights": 42
+      }
+    ]
+  },
+  {
+    "name": "Vistara",
+    "total_flights": 1515,
+    "flight_share_pct": 4.49,
+    "routes_operated": 151,
+    "airports_served_count": 33,
+    "color_hex": "#7C3AED",
+    "color_rgb": [
+      124,
+      58,
+      237
+    ],
+    "fare_stats": {
+      "min_fare": 3687.0,
+      "avg_fare": 7796.35,
+      "max_fare": 21730.0,
+      "fare_count": 479
+    },
+    "top_routes": [
+      {
+        "route": "Delhi \u2192 Mumbai",
+        "flights": 80
+      },
+      {
+        "route": "Mumbai \u2192 Delhi",
+        "flights": 71
+      },
+      {
+        "route": "Bengaluru \u2192 Delhi",
+        "flights": 49
+      },
+      {
+        "route": "Mumbai \u2192 Bengaluru",
+        "flights": 36
+      },
+      {
+        "route": "Hyderabad \u2192 Delhi",
+        "flights": 35
+      }
+    ]
+  },
+  {
+    "name": "Alliance Air (India)",
+    "total_flights": 1493,
+    "flight_share_pct": 4.43,
+    "routes_operated": 311,
+    "airports_served_count": 82,
+    "color_hex": "#06B6D4",
+    "color_rgb": [
+      6,
+      182,
+      212
+    ],
+    "fare_stats": null,
+    "top_routes": [
+      {
+        "route": "Chandigarh \u2192 Delhi",
+        "flights": 26
+      },
+      {
+        "route": "Jaipur \u2192 Delhi",
+        "flights": 26
+      },
+      {
+        "route": "Jabalpur \u2192 Delhi",
+        "flights": 25
+      },
+      {
+        "route": "Dehradun \u2192 Delhi",
+        "flights": 22
+      },
+      {
+        "route": "Guwahati \u2192 Kolkata",
+        "flights": 20
+      }
+    ]
+  },
+  {
+    "name": "Jet Airways",
+    "total_flights": 461,
+    "flight_share_pct": 1.37,
+    "routes_operated": 189,
+    "airports_served_count": 43,
+    "color_hex": "#EAB308",
+    "color_rgb": [
+      234,
+      179,
+      8
+    ],
+    "fare_stats": {
+      "min_fare": 1840.0,
+      "avg_fare": 11643.92,
+      "max_fare": 54826.0,
+      "fare_count": 3849
+    },
+    "top_routes": [
+      {
+        "route": "Mumbai \u2192 Delhi",
+        "flights": 12
+      },
+      {
+        "route": "Jaipur \u2192 Delhi",
+        "flights": 9
+      },
+      {
+        "route": "Ahmedabad \u2192 Mumbai",
+        "flights": 9
+      },
+      {
+        "route": "Delhi \u2192 Mumbai",
+        "flights": 8
+      },
+      {
+        "route": "Dehradun \u2192 Delhi",
+        "flights": 7
+      }
+    ]
+  },
+  {
+    "name": "Akasa Air",
+    "total_flights": 413,
+    "flight_share_pct": 1.22,
+    "routes_operated": 91,
+    "airports_served_count": 23,
+    "color_hex": "#F97316",
+    "color_rgb": [
+      249,
+      115,
+      22
+    ],
+    "fare_stats": null,
+    "top_routes": [
+      {
+        "route": "Ahmedabad \u2192 Mumbai",
+        "flights": 25
+      },
+      {
+        "route": "Mumbai \u2192 Bengaluru",
+        "flights": 22
+      },
+      {
+        "route": "Mumbai \u2192 Ahmedabad",
+        "flights": 18
+      },
+      {
+        "route": "Bengaluru \u2192 Mumbai",
+        "flights": 15
+      },
+      {
+        "route": "Pune \u2192 Bengaluru",
+        "flights": 14
+      }
+    ]
+  },
+  {
+    "name": "TruJet",
+    "total_flights": 301,
+    "flight_share_pct": 0.89,
+    "routes_operated": 66,
+    "airports_served_count": 30,
+    "color_hex": "#EC4899",
+    "color_rgb": [
+      236,
+      72,
+      153
+    ],
+    "fare_stats": {
+      "min_fare": 4140.0,
+      "avg_fare": 4140.0,
+      "max_fare": 4140.0,
+      "fare_count": 1
+    },
+    "top_routes": [
+      {
+        "route": "Tirupati \u2192 Hyderabad",
+        "flights": 13
+      },
+      {
+        "route": "Hyderabad \u2192 Tirupati",
+        "flights": 13
+      },
+      {
+        "route": "Vidyanagar \u2192 Bengaluru",
+        "flights": 11
+      },
+      {
+        "route": "Belgaum \u2192 Kadapa",
+        "flights": 10
+      },
+      {
+        "route": "Jalgaon \u2192 Ahmedabad",
+        "flights": 10
+      }
+    ]
+  },
+  {
+    "name": "Star Air",
+    "total_flights": 187,
+    "flight_share_pct": 0.55,
+    "routes_operated": 79,
+    "airports_served_count": 23,
+    "color_hex": "#3B82F6",
+    "color_rgb": [
+      59,
+      130,
+      246
+    ],
+    "fare_stats": null,
+    "top_routes": [
+      {
+        "route": "Ahmedabad \u2192 Bhuj",
+        "flights": 9
+      },
+      {
+        "route": "Kolhapur \u2192 Mumbai",
+        "flights": 7
+      },
+      {
+        "route": "Bhuj \u2192 Ahmedabad",
+        "flights": 7
+      },
+      {
+        "route": "Surat \u2192 Kishangarh",
+        "flights": 7
+      },
+      {
+        "route": "Belgaum \u2192 Ahmedabad",
+        "flights": 6
+      }
+    ]
+  },
+  {
+    "name": "FlyBig",
+    "total_flights": 104,
+    "flight_share_pct": 0.31,
+    "routes_operated": 39,
+    "airports_served_count": 21,
+    "color_hex": "#10B981",
+    "color_rgb": [
+      16,
+      185,
+      129
+    ],
+    "fare_stats": null,
+    "top_routes": [
+      {
+        "route": "Rupsi \u2192 Kolkata",
+        "flights": 7
+      },
+      {
+        "route": "Kolkata \u2192 Rupsi",
+        "flights": 7
+      },
+      {
+        "route": "Agartala \u2192 Dibrugarh",
+        "flights": 6
+      },
+      {
+        "route": "Dibrugarh \u2192 Agartala",
+        "flights": 6
+      },
+      {
+        "route": "Guwahati \u2192 Agartala",
+        "flights": 4
+      }
+    ]
+  },
+  {
+    "name": "Jetlite",
+    "total_flights": 41,
+    "flight_share_pct": 0.12,
+    "routes_operated": 31,
+    "airports_served_count": 17,
+    "color_hex": "#CA8A04",
+    "color_rgb": [
+      202,
+      138,
+      4
+    ],
+    "fare_stats": null,
+    "top_routes": [
+      {
+        "route": "Delhi \u2192 Mumbai",
+        "flights": 5
+      },
+      {
+        "route": "Coimbatore \u2192 Mumbai",
+        "flights": 2
+      },
+      {
+        "route": "Mumbai \u2192 Delhi",
+        "flights": 2
+      },
+      {
+        "route": "Vadodara \u2192 Mumbai",
+        "flights": 2
+      },
+      {
+        "route": "Mumbai \u2192 Coimbatore",
+        "flights": 2
+      }
+    ]
+  },
+  {
+    "name": "IndiaOne Air",
+    "total_flights": 6,
+    "flight_share_pct": 0.02,
+    "routes_operated": 2,
+    "airports_served_count": 2,
+    "color_hex": "#8B5CF6",
+    "color_rgb": [
+      139,
+      92,
+      246
+    ],
+    "fare_stats": null,
+    "top_routes": [
+      {
+        "route": "Cooch-Behar \u2192 Kolkata",
+        "flights": 3
+      },
+      {
+        "route": "Kolkata \u2192 Cooch-Behar",
+        "flights": 3
+      }
+    ]
+  }
+]

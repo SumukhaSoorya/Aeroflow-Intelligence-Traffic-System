@@ -1,0 +1,14 @@
+{
+  "total_airports": 110,
+  "total_routes": 1423,
+  "total_airlines_schedule": 14,
+  "total_airlines_fare": 12,
+  "total_flight_records": 33734,
+  "total_fare_records": 10683,
+  "avg_fare": 9087.06,
+  "cheapest_fare": 1759.0,
+  "cheapest_route": "Mumbai \u2192 Hyderabad (SpiceJet)",
+  "highest_fare": 79512.0,
+  "top_connected_airport": "New Delhi (DEL) - 81 destinations",
+  "monopoly_routes_pct": 44.1
+}

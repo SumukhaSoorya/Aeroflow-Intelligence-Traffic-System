@@ -1,0 +1,335 @@
+[
+  {
+    "source": "Mumbai",
+    "destination": "Hyderabad",
+    "airline": "SpiceJet",
+    "min_fare": 1759.0,
+    "avg_fare": 2511.11,
+    "max_fare": 13552.0,
+    "record_count": 122
+  },
+  {
+    "source": "Mumbai",
+    "destination": "Hyderabad",
+    "airline": "Jet Airways",
+    "min_fare": 1840.0,
+    "avg_fare": 6227.95,
+    "max_fare": 24210.0,
+    "record_count": 219
+  },
+  {
+    "source": "Mumbai",
+    "destination": "Hyderabad",
+    "airline": "Air India",
+    "min_fare": 2050.0,
+    "avg_fare": 6260.05,
+    "max_fare": 25139.0,
+    "record_count": 136
+  },
+  {
+    "source": "Mumbai",
+    "destination": "Hyderabad",
+    "airline": "IndiGo",
+    "min_fare": 2227.0,
+    "avg_fare": 3659.82,
+    "max_fare": 17501.0,
+    "record_count": 196
+  },
+  {
+    "source": "Chennai",
+    "destination": "Kolkata",
+    "airline": "Air India",
+    "min_fare": 3145.0,
+    "avg_fare": 5895.64,
+    "max_fare": 19630.0,
+    "record_count": 25
+  },
+  {
+    "source": "Banglore",
+    "destination": "Delhi",
+    "airline": "SpiceJet",
+    "min_fare": 3257.0,
+    "avg_fare": 4550.29,
+    "max_fare": 23267.0,
+    "record_count": 181
+  },
+  {
+    "source": "Chennai",
+    "destination": "Kolkata",
+    "airline": "SpiceJet",
+    "min_fare": 3332.0,
+    "avg_fare": 3993.52,
+    "max_fare": 7718.0,
+    "record_count": 128
+  },
+  {
+    "source": "Banglore",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "min_fare": 3359.0,
+    "avg_fare": 5274.11,
+    "max_fare": 22153.0,
+    "record_count": 523
+  },
+  {
+    "source": "Banglore",
+    "destination": "Delhi",
+    "airline": "Jet Airways",
+    "min_fare": 3359.0,
+    "avg_fare": 11021.73,
+    "max_fare": 54826.0,
+    "record_count": 788
+  },
+  {
+    "source": "Banglore",
+    "destination": "Delhi",
+    "airline": "Air Asia",
+    "min_fare": 3383.0,
+    "avg_fare": 4574.28,
+    "max_fare": 10873.0,
+    "record_count": 89
+  },
+  {
+    "source": "Chennai",
+    "destination": "Kolkata",
+    "airline": "IndiGo",
+    "min_fare": 3384.0,
+    "avg_fare": 4538.77,
+    "max_fare": 8580.0,
+    "record_count": 184
+  },
+  {
+    "source": "Banglore",
+    "destination": "Delhi",
+    "airline": "GoAir",
+    "min_fare": 3398.0,
+    "avg_fare": 4948.88,
+    "max_fare": 18558.0,
+    "record_count": 93
+  },
+  {
+    "source": "Kolkata",
+    "destination": "Banglore",
+    "airline": "IndiGo",
+    "min_fare": 3480.0,
+    "avg_fare": 5075.24,
+    "max_fare": 12198.0,
+    "record_count": 445
+  },
+  {
+    "source": "Kolkata",
+    "destination": "Banglore",
+    "airline": "GoAir",
+    "min_fare": 3514.0,
+    "avg_fare": 7047.0,
+    "max_fare": 10586.0,
+    "record_count": 25
+  },
+  {
+    "source": "Chennai",
+    "destination": "Kolkata",
+    "airline": "Vistara",
+    "min_fare": 3687.0,
+    "avg_fare": 7491.37,
+    "max_fare": 11982.0,
+    "record_count": 43
+  },
+  {
+    "source": "Banglore",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "min_fare": 3758.0,
+    "avg_fare": 9238.2,
+    "max_fare": 31783.0,
+    "record_count": 332
+  },
+  {
+    "source": "Kolkata",
+    "destination": "Banglore",
+    "airline": "Air Asia",
+    "min_fare": 3782.0,
+    "avg_fare": 5012.32,
+    "max_fare": 11323.0,
+    "record_count": 150
+  },
+  {
+    "source": "Kolkata",
+    "destination": "Banglore",
+    "airline": "SpiceJet",
+    "min_fare": 3815.0,
+    "avg_fare": 4642.88,
+    "max_fare": 12287.0,
+    "record_count": 300
+  },
+  {
+    "source": "Delhi",
+    "destination": "Cochin",
+    "airline": "GoAir",
+    "min_fare": 3876.0,
+    "avg_fare": 6587.16,
+    "max_fare": 22794.0,
+    "record_count": 76
+  },
+  {
+    "source": "Delhi",
+    "destination": "Cochin",
+    "airline": "SpiceJet",
+    "min_fare": 4098.0,
+    "avg_fare": 5916.36,
+    "max_fare": 11726.0,
+    "record_count": 87
+  },
+  {
+    "source": "Mumbai",
+    "destination": "Hyderabad",
+    "airline": "TruJet",
+    "min_fare": 4140.0,
+    "avg_fare": 4140.0,
+    "max_fare": 4140.0,
+    "record_count": 1
+  },
+  {
+    "source": "Kolkata",
+    "destination": "Banglore",
+    "airline": "Air India",
+    "min_fare": 4145.0,
+    "avg_fare": 10357.32,
+    "max_fare": 31945.0,
+    "record_count": 512
+  },
+  {
+    "source": "Delhi",
+    "destination": "Cochin",
+    "airline": "Jet Airways",
+    "min_fare": 4256.0,
+    "avg_fare": 12642.59,
+    "max_fare": 21954.0,
+    "record_count": 1586
+  },
+  {
+    "source": "Banglore",
+    "destination": "Delhi",
+    "airline": "Vistara",
+    "min_fare": 4353.0,
+    "avg_fare": 6182.17,
+    "max_fare": 21730.0,
+    "record_count": 185
+  },
+  {
+    "source": "Delhi",
+    "destination": "Cochin",
+    "airline": "Air India",
+    "min_fare": 4487.0,
+    "avg_fare": 10000.07,
+    "max_fare": 28322.0,
+    "record_count": 747
+  },
+  {
+    "source": "Delhi",
+    "destination": "Cochin",
+    "airline": "IndiGo",
+    "min_fare": 4729.0,
+    "avg_fare": 7203.93,
+    "max_fare": 16162.0,
+    "record_count": 705
+  },
+  {
+    "source": "Delhi",
+    "destination": "Cochin",
+    "airline": "Vistara",
+    "min_fare": 4851.0,
+    "avg_fare": 6465.64,
+    "max_fare": 12411.0,
+    "record_count": 45
+  },
+  {
+    "source": "Kolkata",
+    "destination": "Banglore",
+    "airline": "Jet Airways",
+    "min_fare": 5608.0,
+    "avg_fare": 11717.57,
+    "max_fare": 15149.0,
+    "record_count": 1256
+  },
+  {
+    "source": "Delhi",
+    "destination": "Cochin",
+    "airline": "Multiple carriers",
+    "min_fare": 5797.0,
+    "avg_fare": 10902.68,
+    "max_fare": 36983.0,
+    "record_count": 1196
+  },
+  {
+    "source": "Banglore",
+    "destination": "Delhi",
+    "airline": "Vistara Premium economy",
+    "min_fare": 5969.0,
+    "avg_fare": 8881.0,
+    "max_fare": 11793.0,
+    "record_count": 2
+  },
+  {
+    "source": "Delhi",
+    "destination": "Cochin",
+    "airline": "Air Asia",
+    "min_fare": 6151.0,
+    "avg_fare": 7804.18,
+    "max_fare": 13774.0,
+    "record_count": 80
+  },
+  {
+    "source": "Kolkata",
+    "destination": "Banglore",
+    "airline": "Vistara",
+    "min_fare": 7770.0,
+    "avg_fare": 9257.68,
+    "max_fare": 16932.0,
+    "record_count": 183
+  },
+  {
+    "source": "Chennai",
+    "destination": "Kolkata",
+    "airline": "Vistara Premium economy",
+    "min_fare": 9125.0,
+    "avg_fare": 9125.0,
+    "max_fare": 9125.0,
+    "record_count": 1
+  },
+  {
+    "source": "Delhi",
+    "destination": "Cochin",
+    "airline": "Multiple carriers Premium economy",
+    "min_fare": 9845.0,
+    "avg_fare": 11418.85,
+    "max_fare": 14629.0,
+    "record_count": 13
+  },
+  {
+    "source": "Mumbai",
+    "destination": "Hyderabad",
+    "airline": "Vistara",
+    "min_fare": 12080.0,
+    "avg_fare": 12326.52,
+    "max_fare": 12395.0,
+    "record_count": 23
+  },
+  {
+    "source": "Delhi",
+    "destination": "Cochin",
+    "airline": "Jet Airways Business",
+    "min_fare": 46490.0,
+    "avg_fare": 49387.5,
+    "max_fare": 52285.0,
+    "record_count": 2
+  },
+  {
+    "source": "Banglore",
+    "destination": "Delhi",
+    "airline": "Jet Airways Business",
+    "min_fare": 52229.0,
+    "avg_fare": 62844.25,
+    "max_fare": 79512.0,
+    "record_count": 4
+  }
+]
