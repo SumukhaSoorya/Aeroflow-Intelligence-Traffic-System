@@ -30,7 +30,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => 
   ];
 
   return (
-    <aside className={`w-full md:w-56 shrink-0 border-r transition-colors ${
+    <aside className={`w-full md:w-56 shrink-0 border-r transition-colors md:sticky md:top-16 md:h-[calc(100vh-4rem)] md:overflow-y-auto ${
       isCream 
         ? 'bg-[#FAF7F2] border-[#E7E2D9] text-[#1C1917]' 
         : 'bg-[#080E1A] border-slate-800 text-slate-300'

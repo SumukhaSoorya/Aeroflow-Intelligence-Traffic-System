@@ -3,11 +3,17 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
     background-color: #F8F6F0;
     color: #1C1917;
     transition: background-color 0.2s ease, color 0.2s ease;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 
   code, pre, .font-mono {
@@ -17,8 +23,8 @@
 
 /* Custom clean scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -32,6 +38,19 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #C4BCAC;
+}
+
+.theme-dark ::-webkit-scrollbar-track {
+  background: #0B111E;
+}
+
+.theme-dark ::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 4px;
+}
+
+.theme-dark ::-webkit-scrollbar-thumb:hover {
+  background: #334155;
 }
 
 /* Warm Cream Theme */

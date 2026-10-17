@@ -19,7 +19,7 @@ const AppContent: React.FC = () => {
       <Header />
       <div className="flex-1 flex flex-col md:flex-row max-w-[1600px] w-full mx-auto">
         <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
-        <main className="flex-1 p-4 lg:p-6 overflow-y-auto">
+        <main className="flex-1 p-4 lg:p-6 min-w-0">
           {activeTab === 'overview' && <OverviewPage onNavigate={setActiveTab} />}
           {activeTab === 'routes' && <MapPage />}
           {activeTab === 'airports' && <AirportAnalysisPage />}

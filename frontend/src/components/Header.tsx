@@ -7,10 +7,10 @@ export const Header: React.FC = () => {
   const isCream = theme === 'cream';
 
   return (
-    <header className={`w-full border-b transition-colors ${
+    <header className={`w-full border-b transition-colors sticky top-0 z-40 backdrop-blur-md ${
       isCream 
-        ? 'bg-[#FAF7F2] border-[#E7E2D9] text-[#1C1917]' 
-        : 'bg-[#0B111E] border-slate-800 text-white'
+        ? 'bg-[#FAF7F2]/95 border-[#E7E2D9] text-[#1C1917]' 
+        : 'bg-[#0B111E]/95 border-slate-800 text-white'
     }`}>
       <div className="max-w-[1600px] mx-auto px-4 lg:px-6 h-16 flex items-center justify-between">
         {/* Brand Logo & Title */}

@@ -42,14 +42,14 @@ export const MapPage: React.FC = () => {
       <FilterBar />
 
       {/* Main Container: Deck.gl Map + Route Inspector Drawer */}
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 h-[calc(100vh-250px)] min-h-[580px]">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 lg:h-[calc(100vh-220px)] lg:min-h-[580px]">
         {/* Map Centerpiece (3 Columns) */}
-        <div className="lg:col-span-3 h-full relative">
+        <div className="lg:col-span-3 h-[520px] lg:h-full relative">
           <AviationMap height="100%" showLayerControls={true} />
         </div>
 
         {/* Route & Airport Inspector (1 Column) */}
-        <div className={`aviation-card rounded-2xl p-4 border flex flex-col h-full overflow-hidden shadow-sm ${
+        <div className={`aviation-card rounded-2xl p-4 border flex flex-col h-[520px] lg:h-full overflow-hidden shadow-sm ${
           isCream ? 'bg-white border-[#E7E2D9]' : 'bg-slate-900/60 border-slate-800'
         }`}>
           {/* Header */}
