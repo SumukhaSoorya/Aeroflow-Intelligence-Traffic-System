@@ -55,8 +55,6 @@ India has one of the fastest-growing domestic aviation markets in the world, yet
   - **Contestable (2–3 Carriers)**: ~27% of routes (duopolies and emerging city pairs).
   - **Hyper-Competitive (4+ Carriers)**: ~8% of routes (high-density metro trunk routes with intense price competition).
 
-### 7. 🎨 Warm Cream & Night Radar Themes
-- Designed with a clean, human-centered **Warm Cream** daylight theme for reading and report presentations.
 - Includes a 1-click toggle to a dark **Night Radar** theme for low-light visualization.
 
 ---
