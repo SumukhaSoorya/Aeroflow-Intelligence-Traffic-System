@@ -7,10 +7,18 @@ import {
   Radio, 
   Search, 
   X,
-  Compass
+  Compass,
+  IndianRupee,
+  ArrowRight,
+  Sparkles,
+  Tag
 } from 'lucide-react';
 
-export const MapPage: React.FC = () => {
+interface MapPageProps {
+  onNavigate?: (tab: string) => void;
+}
+
+export const MapPage: React.FC<MapPageProps> = ({ onNavigate }) => {
   const { 
     filteredRoutes, 
     selectedAirport, 
@@ -95,40 +103,104 @@ export const MapPage: React.FC = () => {
 
           {/* Selected Route Detail Banner */}
           {selectedRoute && (
-            <div className="p-3 rounded-xl bg-sky-500/10 border border-sky-500/30 mb-3 shrink-0 relative">
+            <div className={`p-3.5 rounded-xl border mb-3 shrink-0 relative transition-all ${
+              isCream 
+                ? 'bg-gradient-to-br from-amber-500/10 via-amber-50/50 to-orange-500/10 border-amber-300' 
+                : 'bg-gradient-to-br from-amber-950/20 via-slate-900 to-sky-950/20 border-amber-500/30'
+            }`}>
               <button
                 onClick={() => setSelectedRoute(null)}
-                className="absolute top-2 right-2 text-stone-400 hover:text-stone-700"
+                className="absolute top-2.5 right-2.5 text-stone-400 hover:text-stone-700"
               >
                 <X className="w-3.5 h-3.5" />
               </button>
-              <div className="flex items-center space-x-1.5 text-sky-700 text-xs font-bold mb-1">
+
+              <div className="flex items-center space-x-1.5 text-amber-700 text-xs font-bold mb-1">
                 <Plane className="w-3.5 h-3.5" />
-                <span>Selected Corridor</span>
+                <span>Selected Flight Corridor</span>
               </div>
+
               <p className={`font-bold text-sm ${isCream ? 'text-stone-900' : 'text-white'}`}>
-                {selectedRoute.origin_city} → {selectedRoute.destination_city}
+                {selectedRoute.origin_city} ({selectedRoute.origin_iata}) → {selectedRoute.destination_city} ({selectedRoute.destination_iata})
               </p>
-              <div className="space-y-1 mt-2 text-[11px]">
+
+              {/* Corridor Fares Highlight Box */}
+              {selectedRoute.fare_info && (
+                <div className={`mt-2.5 p-2.5 rounded-lg border space-y-1.5 text-xs ${
+                  isCream ? 'bg-white/90 border-amber-200 shadow-xs' : 'bg-slate-900/90 border-slate-700'
+                }`}>
+                  <div className="flex justify-between items-baseline">
+                    <span className="text-stone-500 text-[11px] font-semibold">Average Fare:</span>
+                    <span className="font-mono text-base font-black text-amber-700">
+                      ₹{selectedRoute.fare_info.avg_fare.toLocaleString()}
+                    </span>
+                  </div>
+
+                  <div className="flex justify-between text-[11px]">
+                    <span className="text-stone-500">Price Spread:</span>
+                    <span className="font-mono font-bold text-emerald-700">
+                      ₹{selectedRoute.fare_info.min_fare.toLocaleString()} - ₹{selectedRoute.fare_info.max_fare.toLocaleString()}
+                    </span>
+                  </div>
+
+                  <div className="flex justify-between text-[11px]">
+                    <span className="text-stone-500">Yield per KM:</span>
+                    <span className="font-mono font-semibold text-sky-700">
+                      ₹{selectedRoute.fare_info.price_per_km || (selectedRoute.fare_info.avg_fare / selectedRoute.distance_km).toFixed(2)}/km
+                    </span>
+                  </div>
+                </div>
+              )}
+
+              {/* Basic Route Specs */}
+              <div className="space-y-1 mt-2 text-[11px] text-stone-600">
                 <div className="flex justify-between">
-                  <span className="text-stone-500">Carrier:</span>
-                  <span className="font-semibold text-sky-700">{selectedRoute.primary_airline}</span>
+                  <span className="text-stone-500">Distance:</span>
+                  <span className="font-mono text-stone-800 font-medium">{selectedRoute.distance_km} km</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-stone-500">Frequency:</span>
-                  <span className={`font-mono font-bold ${isCream ? 'text-stone-900' : 'text-white'}`}>{selectedRoute.frequency} flights/wk</span>
+                  <span className={`font-mono font-bold ${isCream ? 'text-stone-900' : 'text-white'}`}>
+                    {selectedRoute.frequency} flights/wk
+                  </span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-stone-500">Distance:</span>
-                  <span className="font-mono text-stone-700">{selectedRoute.distance_km} km</span>
+                  <span className="text-stone-500">Airlines Operating:</span>
+                  <span className="font-semibold text-stone-800">{selectedRoute.airline_count} Carrier{selectedRoute.airline_count > 1 ? 's' : ''}</span>
                 </div>
-                {selectedRoute.fare_info && (
-                  <div className="flex justify-between font-bold text-emerald-700 pt-1 border-t border-sky-500/20">
-                    <span>Avg Fare:</span>
-                    <span>₹{selectedRoute.fare_info.avg_fare.toLocaleString()}</span>
-                  </div>
-                )}
               </div>
+
+              {/* Competing Airlines & Fares Breakdown */}
+              {selectedRoute.fare_info?.airline_fares && selectedRoute.fare_info.airline_fares.length > 0 && (
+                <div className="mt-2.5 pt-2 border-t border-amber-200/60">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-stone-500 block mb-1">
+                    Operating Airlines & Est. Fares
+                  </span>
+                  <div className="space-y-1 max-h-28 overflow-y-auto pr-1">
+                    {selectedRoute.fare_info.airline_fares.map((af) => (
+                      <div key={af.airline} className="flex items-center justify-between text-[11px] py-0.5">
+                        <span className="text-stone-800 font-medium truncate max-w-[130px]">{af.airline}</span>
+                        <div className="flex items-center space-x-1.5 font-mono">
+                          <span className="text-amber-700 font-bold">₹{af.avg_fare.toLocaleString()}</span>
+                          <span className="text-[9px] text-stone-400">({af.service_type})</span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Jump to Fare Analysis Comparison Button */}
+              {onNavigate && (
+                <button
+                  onClick={() => onNavigate('fares')}
+                  className="w-full mt-3 flex items-center justify-center space-x-1.5 py-1.5 px-3 rounded-lg text-xs font-semibold bg-amber-600 hover:bg-amber-700 text-white shadow-xs transition-colors"
+                >
+                  <IndianRupee className="w-3.5 h-3.5" />
+                  <span>Compare in Fare Analyzer</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </button>
+              )}
             </div>
           )}
 

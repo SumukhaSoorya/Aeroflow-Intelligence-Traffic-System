@@ -3,6 +3,7 @@ import { useAviation } from '../context/AviationContext';
 import { FareBarChart } from '../charts/FareBarChart';
 import { RouteFareChart } from '../charts/RouteFareChart';
 import { PriceDistributionChart } from '../charts/PriceDistributionChart';
+import { CorridorFareComparator } from '../components/CorridorFareComparator';
 import { 
   IndianRupee, 
   ArrowUpDown, 
@@ -11,14 +12,15 @@ import {
   BarChart3, 
   Table, 
   Sparkles,
-  ShieldCheck
+  ShieldCheck,
+  Search
 } from 'lucide-react';
 
 export const FareAnalysisPage: React.FC = () => {
   const { faresSummary, cheapestRoutes, airlines, theme } = useAviation();
   const isCream = theme === 'cream';
 
-  const [activeSubTab, setActiveSubTab] = useState<'charts' | 'matrix'>('charts');
+  const [activeSubTab, setActiveSubTab] = useState<'search' | 'charts' | 'matrix'>('search');
   const [selectedAirline, setSelectedAirline] = useState('all');
   const [selectedRouteFilter, setSelectedRouteFilter] = useState('all');
   const [sortField, setSortField] = useState<'avg_fare' | 'min_fare' | 'max_fare'>('avg_fare');
@@ -108,10 +110,22 @@ export const FareAnalysisPage: React.FC = () => {
       </div>
 
       {/* Sub-Navigation Switcher */}
-      <div className="flex items-center justify-between border-b border-stone-200 pb-3">
-        <div className={`flex items-center space-x-2 p-1.5 rounded-xl border ${
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-stone-200 pb-3 gap-3">
+        <div className={`flex flex-wrap items-center gap-1.5 p-1.5 rounded-xl border ${
           isCream ? 'bg-[#F2ECE1] border-stone-300' : 'bg-slate-900/90 border-slate-800'
         }`}>
+          <button
+            onClick={() => setActiveSubTab('search')}
+            className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-xs font-semibold transition-all ${
+              activeSubTab === 'search'
+                ? 'bg-amber-600 text-white shadow-sm font-bold'
+                : 'text-stone-600 hover:text-stone-900'
+            }`}
+          >
+            <Search className="w-3.5 h-3.5" />
+            <span>Corridor Search & Flight Comparison</span>
+          </button>
+
           <button
             onClick={() => setActiveSubTab('charts')}
             className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-xs font-semibold transition-all ${
@@ -121,7 +135,7 @@ export const FareAnalysisPage: React.FC = () => {
             }`}
           >
             <BarChart3 className="w-3.5 h-3.5" />
-            <span>Visual Fare Analytics & Histograms</span>
+            <span>Fare Distributions & Charts</span>
           </button>
           
           <button
@@ -133,7 +147,7 @@ export const FareAnalysisPage: React.FC = () => {
             }`}
           >
             <Table className="w-3.5 h-3.5" />
-            <span>Corridor Price Variance Matrix & Records</span>
+            <span>Historical Price Variance Matrix</span>
           </button>
         </div>
 
@@ -142,6 +156,10 @@ export const FareAnalysisPage: React.FC = () => {
           <span>Calculated from real Indian Flight Price Dataset</span>
         </div>
       </div>
+
+      {activeSubTab === 'search' && (
+        <CorridorFareComparator />
+      )}
 
       {activeSubTab === 'charts' ? (
         <div className="space-y-6">

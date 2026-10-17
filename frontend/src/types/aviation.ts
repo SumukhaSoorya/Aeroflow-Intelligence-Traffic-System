@@ -19,11 +19,22 @@ export interface Airport {
   category: 'Primary Hub' | 'Major Airport' | 'Regional Connector';
 }
 
+export interface AirlineFareBreakdown {
+  airline: string;
+  min_fare: number;
+  avg_fare: number;
+  max_fare: number;
+  service_type: 'LCC' | 'Full Service' | 'Regional';
+}
+
 export interface RouteFareInfo {
   min_fare: number;
   avg_fare: number;
   max_fare: number;
   fare_count: number;
+  price_per_km?: number;
+  is_empirical?: boolean;
+  airline_fares?: AirlineFareBreakdown[];
 }
 
 export interface Route {

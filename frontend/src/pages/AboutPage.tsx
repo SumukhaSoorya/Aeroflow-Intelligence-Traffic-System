@@ -11,7 +11,7 @@ export const AboutPage: React.FC = () => {
   const { theme } = useAviation();
   const isCream = theme === 'cream';
 
-  const [activeTab, setActiveTab] = useState<'co' | 'questions' | 'audit'>('co');
+  const [activeTab, setActiveTab] = useState<'questions' | 'audit' | 'architecture'>('questions');
 
   return (
     <div className="space-y-6 pb-12">
@@ -30,7 +30,7 @@ export const AboutPage: React.FC = () => {
             AeroFlow Intelligence Traffic System — Methodology & Findings
           </h2>
           <p className="text-xs text-stone-600 max-w-3xl leading-relaxed">
-            Rigorous documentation for the Data Visualization Lab (DVP). Details the investigative data pipeline, visual encoding rationales, WebGL rendering architecture, and empirical answers to domestic aviation research questions.
+            Comprehensive documentation for the Data Visualization Project. Details the investigative data pipeline, empirical answers to domestic aviation research questions, and WebGL rendering architecture.
           </p>
         </div>
       </div>
@@ -40,18 +40,6 @@ export const AboutPage: React.FC = () => {
         isCream ? 'bg-[#F2ECE1] border-stone-300' : 'bg-slate-900/90 border-slate-800'
       }`}>
         <button
-          onClick={() => setActiveTab('co')}
-          className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-xs font-semibold transition-all ${
-            activeTab === 'co'
-              ? 'bg-amber-600 text-white shadow-sm font-bold'
-              : 'text-stone-600 hover:text-stone-900'
-          }`}
-        >
-          <Award className="w-3.5 h-3.5" />
-          <span>Course Outcomes (CO1 - CO4)</span>
-        </button>
-
-        <button
           onClick={() => setActiveTab('questions')}
           className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-xs font-semibold transition-all ${
             activeTab === 'questions'
@@ -60,7 +48,7 @@ export const AboutPage: React.FC = () => {
           }`}
         >
           <HelpCircle className="w-3.5 h-3.5" />
-          <span>Analytical Answers (6 Questions)</span>
+          <span>Research Findings & Analysis</span>
         </button>
 
         <button
@@ -72,89 +60,21 @@ export const AboutPage: React.FC = () => {
           }`}
         >
           <Database className="w-3.5 h-3.5" />
-          <span>Data Quality & Constraints</span>
+          <span>Data Sources & Quality Audit</span>
+        </button>
+
+        <button
+          onClick={() => setActiveTab('architecture')}
+          className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-xs font-semibold transition-all ${
+            activeTab === 'architecture'
+              ? 'bg-amber-600 text-white shadow-sm font-bold'
+              : 'text-stone-600 hover:text-stone-900'
+          }`}
+        >
+          <Award className="w-3.5 h-3.5" />
+          <span>Architecture & Tech Stack</span>
         </button>
       </div>
-
-      {activeTab === 'co' && (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          {/* CO1 */}
-          <div className={`aviation-card rounded-2xl p-5 border space-y-3 shadow-sm ${isCream ? 'bg-white border-sky-500/25' : 'bg-slate-900/50 border-sky-500/20'}`}>
-            <div className="flex items-center space-x-2.5">
-              <span className="w-8 h-8 rounded-lg bg-sky-100 text-sky-800 font-mono font-bold flex items-center justify-center text-sm">
-                CO1
-              </span>
-              <div>
-                <h3 className={`text-sm font-bold ${isCream ? 'text-stone-900' : 'text-white'}`}>Investigation & Selection of Tools & Data Preparation</h3>
-                <span className="text-[11px] text-stone-500">Dataset Profiling & Toolchain Justification</span>
-              </div>
-            </div>
-            <p className="text-xs text-stone-600 leading-relaxed">
-              Investigated three official data sources: the Indian Domestic Airline Dataset (33,734 schedule records), Indian Flight Price Dataset (10,683 pricing points), and OurAirports India coordinates (651 aerodromes). Selected <strong>Pandas</strong> for programmatic ETL, alias normalization, and join harmonization, guaranteeing 100% geospatial matching with zero fabricated records.
-            </p>
-            <div className="p-2.5 rounded-xl bg-stone-100 border border-stone-200 text-[11px] text-sky-800 font-mono">
-              Stack: Python 3.13, Pandas, Deck.gl 9.1, Mapbox GL JS, React 18, TypeScript, Tailwind CSS
-            </div>
-          </div>
-
-          {/* CO2 */}
-          <div className={`aviation-card rounded-2xl p-5 border space-y-3 shadow-sm ${isCream ? 'bg-white border-violet-500/25' : 'bg-slate-900/50 border-indigo-500/20'}`}>
-            <div className="flex items-center space-x-2.5">
-              <span className="w-8 h-8 rounded-lg bg-violet-100 text-violet-800 font-mono font-bold flex items-center justify-center text-sm">
-                CO2
-              </span>
-              <div>
-                <h3 className={`text-sm font-bold ${isCream ? 'text-stone-900' : 'text-white'}`}>Planning & Visual Encoding Design</h3>
-                <span className="text-[11px] text-stone-500">Visual Variables & Semiotics</span>
-              </div>
-            </div>
-            <p className="text-xs text-stone-600 leading-relaxed">
-              Mapped data attributes to distinct visual channels according to perceptual effectiveness:
-            </p>
-            <ul className="text-xs text-stone-600 space-y-1 list-disc list-inside">
-              <li><strong>Spatial Position:</strong> Exact latitude and longitude for airport nodes.</li>
-              <li><strong>Color Hue:</strong> Categorical airline identity (IndiGo Blue, Air India Red, SpiceJet Orange).</li>
-              <li><strong>Arc Stroke Width:</strong> Quantitative schedule frequency / weekly flight volume.</li>
-              <li><strong>Node Radius:</strong> Aerodrome degree centrality (number of direct domestic connections).</li>
-            </ul>
-          </div>
-
-          {/* CO3 */}
-          <div className={`aviation-card rounded-2xl p-5 border space-y-3 shadow-sm ${isCream ? 'bg-white border-emerald-500/25' : 'bg-slate-900/50 border-emerald-500/20'}`}>
-            <div className="flex items-center space-x-2.5">
-              <span className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 font-mono font-bold flex items-center justify-center text-sm">
-                CO3
-              </span>
-              <div>
-                <h3 className={`text-sm font-bold ${isCream ? 'text-stone-900' : 'text-white'}`}>Interactive Visualizations & Exploration</h3>
-                <span className="text-[11px] text-stone-500">Dynamic Brushing, Linking & Filtering</span>
-              </div>
-            </div>
-            <p className="text-xs text-stone-600 leading-relaxed">
-              Implemented coordinated multi-view exploration. User filter interactions dynamically recalculate KPI cards, re-filter WebGL Deck.gl arcs and scatter nodes in real time, and update inspector tables with interactive tooltips and camera pitch/bearing controls.
-            </p>
-            <div className="p-2.5 rounded-xl bg-stone-100 border border-stone-200 text-[11px] text-emerald-800 font-mono">
-              Features: Deck.gl WebGL Arc picking, 3D tilt, Pan/Zoom, Linked KPI state, Route Simulator
-            </div>
-          </div>
-
-          {/* CO4 */}
-          <div className={`aviation-card rounded-2xl p-5 border space-y-3 shadow-sm ${isCream ? 'bg-white border-amber-500/25' : 'bg-slate-900/50 border-amber-500/20'}`}>
-            <div className="flex items-center space-x-2.5">
-              <span className="w-8 h-8 rounded-lg bg-amber-100 text-amber-800 font-mono font-bold flex items-center justify-center text-sm">
-                CO4
-              </span>
-              <div>
-                <h3 className={`text-sm font-bold ${isCream ? 'text-stone-900' : 'text-white'}`}>Clear Communication & Project Findings</h3>
-                <span className="text-[11px] text-stone-500">Empirical Synthesis of Research Questions</span>
-              </div>
-            </div>
-            <p className="text-xs text-stone-600 leading-relaxed">
-              Systematically answered the core aviation analytics questions through structured dashboard sections: Route Density, Pricing Distribution, Carrier Dominance, Contestability Indexing, and Hub Centrality, accompanied by a dedicated Data Quality audit.
-            </p>
-          </div>
-        </div>
-      )}
 
       {activeTab === 'questions' && (
         <div className={`aviation-card rounded-2xl p-6 border space-y-4 shadow-sm ${isCream ? 'bg-white border-stone-200' : 'bg-slate-900/40 border-slate-800'}`}>
@@ -240,6 +160,50 @@ export const AboutPage: React.FC = () => {
                 </tbody>
               </table>
             </div>
+          </div>
+        </div>
+      )}
+
+      {activeTab === 'architecture' && (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 text-xs">
+          <div className={`aviation-card rounded-2xl p-5 border space-y-3 shadow-sm ${isCream ? 'bg-white border-stone-200' : 'bg-slate-900/40 border-slate-800'}`}>
+            <h3 className={`text-sm font-bold uppercase tracking-wider ${isCream ? 'text-stone-900' : 'text-white'}`}>
+              Visualization & Rendering Architecture
+            </h3>
+            <ul className="space-y-2 text-stone-600 leading-relaxed">
+              <li className="flex items-start space-x-2">
+                <span className="text-amber-600 font-bold">•</span>
+                <span><strong>Deck.gl 9.1 (WebGL2):</strong> GPU-accelerated rendering of 1,423 great-circle arcs with dynamic height curvature and 110 scatterplot nodes at a constant 60 FPS without DOM lag.</span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <span className="text-amber-600 font-bold">•</span>
+                <span><strong>Mapbox GL JS:</strong> High-resolution vector basemap with smooth 3D perspective tilt, rotation, and pan controls.</span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <span className="text-amber-600 font-bold">•</span>
+                <span><strong>Recharts 2.x:</strong> SVG-based interactive data charts for fare distributions, airline route networks, and route contestability.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className={`aviation-card rounded-2xl p-5 border space-y-3 shadow-sm ${isCream ? 'bg-white border-stone-200' : 'bg-slate-900/40 border-slate-800'}`}>
+            <h3 className={`text-sm font-bold uppercase tracking-wider ${isCream ? 'text-stone-900' : 'text-white'}`}>
+              Data Flow & State Management
+            </h3>
+            <ul className="space-y-2 text-stone-600 leading-relaxed">
+              <li className="flex items-start space-x-2">
+                <span className="text-emerald-600 font-bold">•</span>
+                <span><strong>Reactive React Context:</strong> Centralized `AviationContext` holds verified datasets, dynamic active filter state, and synchronized entity selections.</span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <span className="text-emerald-600 font-bold">•</span>
+                <span><strong>Dual Theme Engine:</strong> Seamless switching between Warm Cream (lab daylight theme) and Dark (aviation night radar theme) with CSS custom properties.</span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <span className="text-emerald-600 font-bold">•</span>
+                <span><strong>100% Client-Side Processing:</strong> Zero latency route search, fare comparison, and multi-airline analysis computed directly in-browser.</span>
+              </li>
+            </ul>
           </div>
         </div>
       )}

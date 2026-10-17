@@ -21,7 +21,7 @@ const AppContent: React.FC = () => {
         <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
         <main className="flex-1 p-4 lg:p-6 min-w-0">
           {activeTab === 'overview' && <OverviewPage onNavigate={setActiveTab} />}
-          {activeTab === 'routes' && <MapPage />}
+          {activeTab === 'routes' && <MapPage onNavigate={setActiveTab} />}
           {activeTab === 'airports' && <AirportAnalysisPage />}
           {activeTab === 'fares' && <FareAnalysisPage />}
           {activeTab === 'airlines' && <AirlineAnalysisPage />}
